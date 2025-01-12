@@ -3,7 +3,7 @@ entries:
   celworker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-12T18:58:19.924028+01:00"
+    created: "2025-01-12T19:01:10.839468+01:00"
     description: A Helm chart for Kubernetes
     digest: 63fe0c82e7e37bf529a0d4ffd527cb9759f3666a954005dcd46287d93504413f
     name: celworker
@@ -13,7 +13,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-12T18:58:19.923896+01:00"
+    created: "2025-01-12T19:01:10.839316+01:00"
     description: A Helm chart for Kubernetes
     digest: 9f21a0eaa49d85660ae381c2ac3e9f6f10e22326cac94f107d8c24f0a0951db7
     name: celworker
@@ -23,7 +23,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-12T18:58:19.923761+01:00"
+    created: "2025-01-12T19:01:10.839156+01:00"
     description: A Helm chart for Kubernetes
     digest: b7fad4e3e5bac3ea221aae8f21774c7cf67385c49af0a136d4a7dadb2f22e080
     name: celworker
@@ -33,7 +33,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-01-12T18:58:19.923615+01:00"
+    created: "2025-01-12T19:01:10.839007+01:00"
     description: A Helm chart for Kubernetes
     digest: 351b5297d80e4047497a64eee0655ba096b97e6e36be85c1ecb53137a19a8d26
     name: celworker
@@ -73,7 +73,63 @@ entries:
         url: https://charts.mark.thebault.de/public.key
     apiVersion: v2
     appVersion: postgresql-v2.9.0
-    created: "2025-01-12T18:58:19.929202+01:00"
+    created: "2025-01-12T19:01:10.849865+01:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 14.3.3
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.23.0
+    description: Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+    digest: ed187738f6d37f2d2bafb3e90da692b8dfecd06a90516404544933dea861b8dc
+    home: https://github.com/mark.thebault/helm-charts
+    icon: https://raw.githubusercontent.com/umami-software/umami/master/public/android-chrome-512x512.png
+    maintainers:
+    - email: mark.thebault@gmail.com
+      name: mark.thebault
+    name: umami
+    sources:
+    - https://github.com/umami-software/umami
+    - https://umami.is/
+    type: application
+    urls:
+    - https://ml-alpha.github.io/helm-charts/umami-3.3.5.tgz
+    version: 3.3.5
+  - annotations:
+      artifacthub.io/category: monitoring-logging
+      artifacthub.io/changes: |
+        - kind: changed
+          description: README format
+      artifacthub.io/screenshots: |
+        - title: Umami measures just the important metrics that you care about and everything is displayed on a single, easy to browse page.
+          url: https://umami.is/images/feature-website-stats.png
+        - title: Get detailed breakdowns about your visitors including what browser, OS and device they used.
+          url: https://umami.is/images/feature-session-stats.png
+        - title: Track more than just pageviews. Capture any event on your website like button clicks and form entries.
+          url: https://umami.is/images/feature-events.png
+        - title: Dive deeper into your data using easy to apply filters. Segment your users by any metric such as browser, OS, and country.
+          url: https://umami.is/images/feature-filters.png
+        - title: Get a realtime view of your current website traffic. See the exact pages where your visitors are landing.
+          url: https://umami.is/images/feature-realtime.png
+        - title: Umami has been translated into many different languages by the very active open source community.
+          url: https://umami.is/images/feature-languages.png
+        - title: Umami is able to track an unlimited number of websites from a single installation. You can even track subdomains and individual URLs.
+          url: https://umami.is/images/feature-websites.png
+        - title: Umami can be used to host data for friends or clients. Just create a separate account and they can start tracking their own websites on their own dashboard.
+          url: https://umami.is/images/feature-accounts.png
+        - title: The Umami interface has been optimized for mobile so you can view your stats from anywhere.
+          url: https://umami.is/images/feature-mobile.png
+        - title: Dark mode included. Choose your favorite theme for Umami.
+          url: https://umami.is/images/feature-dark-mode.png
+      artifacthub.io/signKey: |
+        fingerprint: EE24F8BB6D099E78FD704F83B5ECDBCDDD485D0E
+        url: https://charts.mark.thebault.de/public.key
+    apiVersion: v2
+    appVersion: postgresql-v2.9.0
+    created: "2025-01-12T19:01:10.844944+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -101,7 +157,7 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-12T18:58:19.930258+01:00"
+    created: "2025-01-12T19:01:10.850792+01:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -117,7 +173,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-12T18:58:19.929981+01:00"
+    created: "2025-01-12T19:01:10.850498+01:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -133,7 +189,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-01-12T18:58:19.929666+01:00"
+    created: "2025-01-12T19:01:10.85018+01:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -147,4 +203,4 @@ entries:
     urls:
     - https://ml-alpha.github.io/helm-charts/webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2025-01-12T18:58:19.923397+01:00"
+generated: "2025-01-12T19:01:10.838768+01:00"

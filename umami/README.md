@@ -97,27 +97,6 @@ The command removes all the Kubernetes components associated with the chart and 
 | serviceAccount.create | bool | `true` | Specifies whether a service account should be created |
 | serviceAccount.name | string | `""` | The name of the service account to use. If not set and create is true, a name is generated using the fullname template |
 | tolerations | list | `[]` | Toleration labels for pod assignment |
-| umami.appSecret.existingSecret | string | `""` | Name of an existing secret containing the app secret under the key app-secret. |
-| umami.appSecret.secret | string | `""` | A random string used to generate unique values. |
-| umami.clientIpHeader | string | `""` | HTTP header to check for the client's IP address. This is useful when you're behind a proxy that uses non-standard headers. |
-| umami.cloudMode | string | `"1"` | Disables users, teams, and websites settings page. |
-| umami.collectApiEndpoint | string | `""` | Allows you to send metrics to a location different than the default `/api/send`. This is to help you avoid some ad-blockers. |
-| umami.corsMaxAge | string | `"86400"` | How many seconds a CORS preflight should last. Default is 24 hours. |
-| umami.debug | string | `""` | Console logging for specific areas of the application. Values include `umami:auth`, `umami:clickhouse`, `umami:kafka`, `umami:middleware`, and `umami:prisma`. |
-| umami.disableBotCheck | string | `"1"` | By default bots are excluded from statistics. This disables checking for bots. |
-| umami.disableLogin | string | `"1"` | Disables the login page for the application |
-| umami.disableTelemetry | string | `"1"` | Umami collects completely anonymous telemetry data in order help improve the application. You can choose to disable this if you don't want to participate. |
-| umami.disableUpdates | string | `"1"` | Disables the check for new versions of Umami |
-| umami.enableTestConsole | string | `"1"` | Enables the internal test page, {host}/console. Admin access is required. Users can manually fire pageviews and events to their websites. |
-| umami.forceSSL | string | `"1"` | This will redirect all requests from http to https in the Umami application. Note, this does not apply to the tracking script. |
-| umami.hostname | string | `"0.0.0.0"` | hostname under which Umami will be reached |
-| umami.ignoreHostname | string | `""` | This will do a DNS lookup on a hostname and the resulting IP address will be ignored. This can be a comma delimited list of hostnames. |
-| umami.ignoredIpAddresses | string | `""` | You can provide a comma-delimited list of IP address to exclude from data collection. |
-| umami.logQuery | string | `"1"` | If you are running in development mode, this will log database queries to the console for debugging. |
-| umami.migration.v1v2.enabled | bool | `false` | enable a job that migrates database structure from v1 to v2 |
-| umami.removeDisableLoginEnv | bool | `true` | setting this to true removes the environment variable DISABLE_LOGIN defined in `umami.disableLogin` from the deployment as this caused errors in some setups |
-| umami.removeTrailingSlash | string | `"1"` | Removes the trailing slash from all incoming urls. |
-| umami.trackerScriptName | string | `"umami"` | Allows you to assign a custom name to the tracker script different from the default umami. This is to help you avoid some ad-blockers. |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`.
 
