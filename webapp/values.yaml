@@ -28,6 +28,7 @@ envFrom: []
 
 # Network traffic to the pods
 service:
+  enabled: true
   # -- Service type, change to LoadBalancer or NodePort to expose traffic outside the cluster
   type: ClusterIP
   # -- Port the service accepts traffic on

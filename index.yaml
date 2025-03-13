@@ -3,7 +3,7 @@ entries:
   celworker:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-13T12:54:06.046401+01:00"
+    created: "2025-03-13T13:00:52.009767+01:00"
     description: A Helm chart for Kubernetes
     digest: 63fe0c82e7e37bf529a0d4ffd527cb9759f3666a954005dcd46287d93504413f
     name: celworker
@@ -13,7 +13,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-13T12:54:06.046042+01:00"
+    created: "2025-03-13T13:00:52.009618+01:00"
     description: A Helm chart for Kubernetes
     digest: 9f21a0eaa49d85660ae381c2ac3e9f6f10e22326cac94f107d8c24f0a0951db7
     name: celworker
@@ -23,7 +23,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-13T12:54:06.045769+01:00"
+    created: "2025-03-13T13:00:52.009454+01:00"
     description: A Helm chart for Kubernetes
     digest: b7fad4e3e5bac3ea221aae8f21774c7cf67385c49af0a136d4a7dadb2f22e080
     name: celworker
@@ -33,7 +33,7 @@ entries:
     version: 1.0.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-13T12:54:06.045563+01:00"
+    created: "2025-03-13T13:00:52.009302+01:00"
     description: A Helm chart for Kubernetes
     digest: 351b5297d80e4047497a64eee0655ba096b97e6e36be85c1ecb53137a19a8d26
     name: celworker
@@ -73,7 +73,7 @@ entries:
         url: https://charts.mark.thebault.de/public.key
     apiVersion: v2
     appVersion: postgresql-v2.9.0
-    created: "2025-03-13T12:54:06.057598+01:00"
+    created: "2025-03-13T13:00:52.020477+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -129,7 +129,7 @@ entries:
         url: https://charts.mark.thebault.de/public.key
     apiVersion: v2
     appVersion: postgresql-v2.9.0
-    created: "2025-03-13T12:54:06.05225+01:00"
+    created: "2025-03-13T13:00:52.015549+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -157,7 +157,23 @@ entries:
   webapp:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-13T12:54:06.059208+01:00"
+    created: "2025-03-13T13:00:52.022267+01:00"
+    description: A generic chart for deploying almost any simple web app or RESTful
+      microservice as a deployment, and exposing HTTP(S) traffic to it via a range
+      of options, including Ingress or a basic Service
+    digest: 9e61dc0a04f837c61d8963afaded7add16ef5bbb0b1fde9b806a7dac3de705b7
+    home: https://github.com/ml-alpha/helm-charts
+    icon: https://raw.githubusercontent.com/ml-alpha/helm-charts/master/webapp/icon.png
+    name: webapp
+    sources:
+    - https://github.com/ml-alpha/helm-charts
+    type: application
+    urls:
+    - https://ml-alpha.github.io/helm-charts/webapp-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-13T13:00:52.021709+01:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -173,7 +189,7 @@ entries:
     version: 1.0.3
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-13T12:54:06.05893+01:00"
+    created: "2025-03-13T13:00:52.021422+01:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -189,7 +205,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-13T12:54:06.058538+01:00"
+    created: "2025-03-13T13:00:52.021136+01:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -205,7 +221,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-13T12:54:06.058064+01:00"
+    created: "2025-03-13T13:00:52.020806+01:00"
     description: A generic chart for deploying almost any simple web app or RESTful
       microservice as a deployment, and exposing HTTP(S) traffic to it via a range
       of options, including Ingress or a basic Service
@@ -219,4 +235,4 @@ entries:
     urls:
     - https://ml-alpha.github.io/helm-charts/webapp-1.0.0.tgz
     version: 1.0.0
-generated: "2025-03-13T12:54:06.045268+01:00"
+generated: "2025-03-13T13:00:52.009067+01:00"
