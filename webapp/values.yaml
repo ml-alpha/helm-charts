@@ -74,6 +74,7 @@ nameOverride: ""
 fullnameOverride: ""
 
 livenessProbe:
+  enabled: true
   # -- URL path checked by liveness & readiness probes
   path: /
   # -- Number of liveness probe failures to tolerate
@@ -82,6 +83,9 @@ livenessProbe:
   initialDelaySeconds: 20
   # -- Interval between liveness probe checks
   periodSeconds: 20
+
+readinessProbe:
+  enabled: true
 
 serviceAccount:
   # -- Specifies whether a service account should be created
