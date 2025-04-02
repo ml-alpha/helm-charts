@@ -2,7 +2,7 @@ apiVersion: v2
 name: webapp
 description: A generic chart for deploying almost any simple web app or RESTful microservice as a deployment, and exposing HTTP(S) traffic to it via a range of options, including Ingress or a basic Service
 type: application
-version: 1.0.5
+version: 1.0.7
 appVersion: 1.0.0
 icon: https://raw.githubusercontent.com/ml-alpha/helm-charts/master/webapp/icon.png
 home: https://github.com/ml-alpha/helm-charts
